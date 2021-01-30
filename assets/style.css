@@ -39,3 +39,7 @@
 #searchButton, #searchRandom {
     border-radius: 50px;
 }
+
+.limitColumn {
+    max-width: 700px;
+}
