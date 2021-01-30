@@ -1,0 +1,24 @@
+
+
+#logo {
+    width: 10rem;
+}
+
+
+.uk-search {
+    margin-top: 50px;
+}
+
+#searchBar {
+    width: 50rem;
+    border-radius: 50px;
+}
+
+.uk-checkbox {
+    border-radius: 5px;
+}
+
+.textBottom {
+    text-align: center;
+    margin-top: 100px;
+}
