@@ -6,51 +6,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css" />
-    <link href="./assets/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/49b9f897d8.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link href="./assets/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="uk-navbar-container uk-margin uk-flex" uk-navbar>
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
         <div class="uk-navbar-center">
             <a id="logo" class="uk-navbar-item uk-logo" href="./index.html"><img src="./img/logo.png"></a>
     </nav>
 
-    <div class="uk-container uk-flex">
+    <div class="uk-container">
         <section class="mainText">
-            <div class="uk-heading-small"> What inspiration you are looking for?</div>
+            <div class="text uk-heading-small">Games News</div>
+
             <div class="uk-margin">
-                <form class="uk-search uk-search-default">
+                <form class="uk-search uk-search-default uk-align-center">
                     <a href="" uk-search-icon></a>
                     <input id="searchBar" class="uk-search-input" type="search" placeholder="Ex. Website Header...">
                 </form>
             </div>
+        </section>
+            
+                <!-- <div class="uk-column-1-2 uk-align-center"> -->
+                    <!-- <button id="searchButton" class="uk-button uk-button-secondary">Search</button> -->
+                    <!-- <button id="searchRandom" class="uk-button uk-button-danger">Find-me a Random Game</button> -->
+                    <button id="searchButton" class="uk-button uk-button-primary uk-align-center" type="button">Search</button>
+                    <button id="searchRandom" class="uk-button uk-button-danger uk-align-center" type="button">Find-me a Random Game</button>
+               
+            </div>
+
+           
+
+
             <div class="filters uk-margin-left">
-                <div class="uk-column-1-4">
-                    <p><i class="fas fa-filter"></i> Filter:</p>
-                    <p> </p><label><input class="uk-checkbox" type="checkbox" unchecked> </label>Behance</h>
-                    <p> </p><label><input class="uk-checkbox" type="checkbox" unchecked> </label>Pinterest</p>
-                    <p> </p><label><input class="uk-checkbox" type="checkbox" unchecked> </label>Dribbble</p>
-                </div>
-
-                    <button id="searchButton"class="uk-position-center uk-button uk-button-default">Default</button>
-
-
                 <div class="textBottom">
                     <p>We compile the best websites so you don't have to search anywhere else!</p>
                 </div>
-        </section>
+
+                <div class="filters uk-align-center">
+                    <div class="pastSearches">
+                        <h3>Past Search</h3>
+                    </div>
+
+
+             
+       
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js"
         integrity="sha512-OZ9Sq7ecGckkqgxa8t/415BRNoz2GIInOsu8Qjj99r9IlBCq2XJlm9T9z//D4W1lrl+xCdXzq0EYfMo8DZJ+KA=="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit-icons.min.js"
-        integrity="sha512-hcz3GoZLfjU/z1OyArGvM1dVgrzpWcU3jnYaC6klc2gdy9HxrFkmoWmcUYbraeS+V/GWSgfv6upr9ff4RVyQPw=="
-        crossorigin="anonymous"></script>
-        <script src="./assets/main.js"></script>
+    <script src="./assets/main.js"></script>
+
 </body>
 
 </html>
