@@ -1,16 +1,19 @@
 
+.uk-navbar-container {
+    background-color: black;
+}
+
 
 #logo {
     width: 10rem;
 }
 
-
 .uk-search {
+    width: 750px;
     margin-top: 50px;
 }
 
 #searchBar {
-    width: 50rem;
     border-radius: 50px;
 }
 
@@ -21,4 +24,22 @@
 .textBottom {
     text-align: center;
     margin-top: 100px;
+}
+
+.pastSearches {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.text {
+    text-align: center;
+}
+
+#searchButton, #searchRandom {
+    border-radius: 50px;
+}
+
+.limitColumn {
+    max-width: 700px;
 }
