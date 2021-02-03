@@ -50,7 +50,7 @@ $.getJSON(
                 console.log(data);
 
                 var price = data[0].normalPrice;
-                var priceText = $("<p>").text(price)
+                var priceText = $("<p>").text(price).prepend("Price: ")
                 var cardBody = $("<div>", { "class": 'uk-card-body uk-card-default' })
 
                 $("#gameContainer").append(cardBody);
