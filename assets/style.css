@@ -43,3 +43,9 @@
 .limitColumnstatus {
     max-width: 700px;
 }
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+
