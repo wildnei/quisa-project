@@ -9,7 +9,7 @@
 }
 
 .uk-search {
-    width: 750px;
+    width: 1250px;
     margin-top: 50px;
 }
 
@@ -46,6 +46,10 @@
 
 fieldset {
     margin-bottom: 20px;
+}
+
+.infomargin {
+    margin-bottom: 50px;
 }
 
 
