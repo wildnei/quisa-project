@@ -47,6 +47,7 @@ p {
 .pastSearches {
     text-align: center;
     margin-top: 100px;
+    border-radius: 100px;
 }
 
 .text {
@@ -55,8 +56,16 @@ p {
     text-align: center;
 }
 
-#searchButton, #searchRandom {
+#searchButton {
     border-radius: 50px;
+    background-color: rgb(71, 34, 9);
+    color: rgb(255, 209, 122);
+}
+
+#searchRandom {
+    border-radius: 50px;
+    background-color: rgb(255, 209, 122);
+    color:  rgb(71, 34, 9);
 }
 
 .limitColumnstatus {
@@ -75,21 +84,20 @@ fieldset {
 .searches {
     margin: 0px 5px 0px 5px;
     border: white;
-    padding: 0px 20px 3px 20px;
     border-radius: 5px;
     font-family: 'Yusei Magic', sans-serif;
-    background-color: rgba(141, 141, 141, 0.746);
-    color: white;
+    color: rgb(71, 34, 9);
+    font-size: 20px;
+    font-weight: 600;
     
 }
 
 #clear  {
-    
     margin-bottom: 100px;
     justify-content: center;
     align-items: center;
-    color: rgb(170, 129, 18);
-    background-color: rgb(255, 227, 150);
+    color: rgba(14, 14, 14, 0.938);
+    background-color: rgb(175, 175, 175);
     width: 300px;
     margin-top: 50px;
     border-radius: 100px;

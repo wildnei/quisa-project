@@ -1,8 +1,22 @@
 $("#searchButton").click(function () {
     event.preventDefault();
     var searchGame = $("#searchBar").val();
+    console.log(searchGame)
+    localStorage.setItem("searchTerm", searchGame);
+  
+    // This function erases the listed names on the High Score Page
+    $("#clear").on("click", function (event) {
+        $("#searchOutput").empty();
+    });
+
+    // This function erases the listed names from local storage memory, so they don't come back when refreshing the page
+    $("#clear").on("click", function (event) {
+        window.localStorage.clear();
+    });
+
+
     $.ajax({
-        url: "https://api.rawg.io/api/games?search=" + searchGame + "&key=7d8cd764eeb94cf8a9737cc402be2a4b",//extra key to rawg
+        url: "https://api.rawg.io/api/games?search=" + searchGame + "&key=7d8cd764eeb94cf8a9737cc402be2a4b", //extra key to rawg
         method: "GET"
     }).then(function (response) {
         console.log(response);
@@ -53,12 +67,11 @@ $("#searchButton").click(function () {
                 console.log("Steam AppID: " + steamID);
             }
         });
-
-        //  var storedSearch = localStorage.getItem("searchterm");
-        //  localStorage.setItem("searchresults", results);
-        //  console.log(storedSearch);
+                renderButtons();
     });
 });
+
+renderButtons()
 
 $("#searchRandom").click(function () {
     event.preventDefault()
@@ -121,5 +134,23 @@ $("#searchRandom").click(function () {
             console.log("Steam AppID: " + steamID);
         })
     });
-
+            renderButtons();
 });
+
+function renderButtons() {
+ 
+
+    $("#searchOutput").empty();
+    for (var i = 0; i < 1; i++) {
+        var b = $("<text>");
+        b.addClass("searches");
+        var retrievedSearches = localStorage.getItem("searchTerm");
+        console.log("this shouldn't be null: ", retrievedSearches)
+        var storage1 = retrievedSearches
+        // b.attr("data-name", pastSearches[i]);
+        b.text(storage1);
+        // b.text(pastSearches[i])
+
+        $("#searchOutput").append(b);
+    }
+}
