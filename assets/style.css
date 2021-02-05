@@ -1,8 +1,26 @@
 
+body {
+    color: rgb(7, 7, 7);
+    background: #fff;
+    font-family: 'Yusei Magic', sans-serif;
+}
+a {
+  color: #0033cc;
+}
+
+
+h2 {
+    color: rgb(26, 26, 26);
+    font-weight: 700;
+}
+
+p {
+    color: rgb(5, 68, 119);
+}
+
 .uk-navbar-container {
     background-color: black;
 }
-
 
 #logo {
     width: 10rem;
@@ -31,8 +49,9 @@
     margin-top: 100px;
 }
 
-
 .text {
+    margin-top: 50px;
+    font-family: 'Yusei Magic', sans-serif;
     text-align: center;
 }
 
@@ -53,3 +72,26 @@ fieldset {
 }
 
 
+.searches {
+    margin: 0px 5px 0px 5px;
+    border: white;
+    padding: 0px 20px 3px 20px;
+    border-radius: 5px;
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: rgba(141, 141, 141, 0.746);
+    color: white;
+    
+}
+
+#clear  {
+    
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(170, 129, 18);
+    background-color: rgb(255, 227, 150);
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 100px;
+
+}
