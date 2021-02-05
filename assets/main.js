@@ -1,18 +1,23 @@
+    // This function erases the listed names on the High Score Page
+
+
+$("#clear").on("click", function (event) {
+    $("#searchOutput").empty();
+});
+
+    // This function erases the listed names from local storage memory, so they don't come back when refreshing the page
+
+
+$("#clear").on("click", function (event) {
+    window.localStorage.clear();
+});
+
+
 $("#searchButton").click(function () {
     event.preventDefault();
     var searchGame = $("#searchBar").val();
     console.log(searchGame)
     localStorage.setItem("searchTerm", searchGame);
-  
-    // This function erases the listed names on the High Score Page
-    $("#clear").on("click", function (event) {
-        $("#searchOutput").empty();
-    });
-
-    // This function erases the listed names from local storage memory, so they don't come back when refreshing the page
-    $("#clear").on("click", function (event) {
-        window.localStorage.clear();
-    });
 
 
     $.ajax({
@@ -30,7 +35,7 @@ $("#searchButton").click(function () {
                 var gameName = (results[i].name)
                 var rating = (results[i].metacritic)
                 var gameImage = (results[i].background_image)
-                var platforms = results[i].platforms[0].platform.name //TODO How can I show all the platforms?
+                var platforms = results[i].platforms[0].platform.name
                 var gamePrice = (data[i].salePrice)
                 var steamText = (data[i].steamRatingText)
                 var steamPercent = (data[i].steamRatingPercent)
